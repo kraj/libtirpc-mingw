@@ -112,11 +112,6 @@ struct cmsgcred {
         gid_t   cmcred_groups[CMGROUP_MAX];     /* groups */
 };
 
-struct cmessage {
-        struct cmsghdr cmsg;
-        struct cmsgcred cmcred;
-};
-
 static enum clnt_stat clnt_vc_call(CLIENT *, rpcproc_t, xdrproc_t, void *,
     xdrproc_t, void *, struct timeval);
 static void clnt_vc_geterr(CLIENT *, struct rpc_err *);

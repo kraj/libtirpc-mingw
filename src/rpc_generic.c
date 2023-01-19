@@ -638,7 +638,7 @@ void freenetbuf(struct netbuf *nbuf)
 	}
 }
 
-#ifdef __REACTOS__
+#if 0
 PCSTR
 WSAAPI
 inet_ntop(INT af, PVOID src, PSTR dst, size_t cnt)

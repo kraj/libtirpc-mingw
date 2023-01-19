@@ -55,6 +55,7 @@
 //#include <err.h>
 #include "rpc_com.h"
 
+#undef IP_RECVERR
 #ifdef IP_RECVERR
 #include <asm/types.h>
 #include <linux/errqueue.h>

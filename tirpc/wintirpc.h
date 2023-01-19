@@ -72,14 +72,8 @@
 /*
  * Functions imported from BSD
  */
-struct timezone 
-{
-  int  tz_minuteswest; /* minutes W of Greenwich */
-  int  tz_dsttime;     /* type of dst correction */
-};
-
 extern int gettimeofday(struct timeval *tv, struct timezone *tz);
-extern int asprintf(char **str, const char *fmt, ...);
+//extern int asprintf(char **str, const char *fmt, ...);
 
 #define SOL_IPV6 IPPROTO_IPV6
 
